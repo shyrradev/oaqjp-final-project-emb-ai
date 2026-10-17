@@ -1,0 +1,17 @@
+test_blank_input (__main__.TestEmotionDetector.test_blank_input)
+Blank inputs are rejected without a network request. ... ok
+test_five_emotions (__main__.TestEmotionDetector.test_five_emotions)
+Verify extraction for each of the five required sentences. ... ok
+test_status_400 (__main__.TestEmotionDetector.test_status_400)
+Watson HTTP 400 returns six None values. ... ok
+test_upstream_error (__main__.TestEmotionDetector.test_upstream_error)
+HTTP errors are raised for the Flask layer to handle. ... ok
+test_blank (__main__.TestWebApplication.test_blank) ... ok
+test_formatted_result (__main__.TestWebApplication.test_formatted_result) ... ok
+test_home (__main__.TestWebApplication.test_home) ... ok
+test_unavailable (__main__.TestWebApplication.test_unavailable) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.022s
+
+OK

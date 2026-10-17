@@ -1,32 +1,5 @@
-<html>
-<head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="./static/mywebscript.js"></script>
-    <style>
-        .center-heading {
-            text-align: center;
-        }
-    </style>
-</head>
-<body>
-    <div class="card">
-        <div class="card-body">
-            <h1 class="center-heading">NLP - Emotion Detection</h1> 
-            <div style="padding: 25px 25px 25px 25px;">
-            <h2 class="mb-3">
-                <label class="form-label">Please enter the text to be analyzed</label>
-                <input type="textarea" class="form-control" id="textToAnalyze">
-            </h2>
-
-            <div style="padding: 25px 25px 25px 25px;">
-                <button onclick="RunSentimentAnalysis()" class="btn btn-secondary">Run Sentiment Analysis</button>
-            </div>
-            <div style="padding: 25px 25px 25px 25px;"></div>
-            <h2 class="mb-3">
-                <label class="form-label">Result of Emotion Detection</label>
-            </h2>
-
-            <div id="system_response" style="padding: 25px 25px 25px 25px;"></div>
-        </div>
-    </div>
-</body>
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Emotion Detector</title>
+<style>body{margin:0;font:18px/1.6 Arial,sans-serif;background:#f0f4fb;color:#192d48}main{max-width:850px;margin:70px auto;padding:40px;background:white;border-radius:16px;border-top:7px solid #2459cf;box-shadow:0 10px 40px #182c4810}h1{font-size:38px;margin:0 0 8px}small{color:#536780}label{display:block;font-weight:bold;margin:30px 0 10px}textarea{box-sizing:border-box;width:100%;padding:15px;font:inherit;border:1px solid #9baac2;border-radius:8px}button{padding:13px 24px;margin:20px 0;background:#2459cf;color:white;border:0;border-radius:7px;font:inherit;cursor:pointer}#system_response{padding:20px;background:#edf3ff;border-radius:8px;min-height:45px}footer{margin-top:30px;font-size:14px;color:#536780}@media(max-width:650px){main{margin:20px;padding:24px}}</style><script src="/static/mywebscript.js" defer></script></head>
+<body><main><small>IBM WATSON NLP · SHAYAN NAZAR</small><h1>Emotion Detector</h1><p>Analyze anger, disgust, fear, joy and sadness in a sentence.</p><form id="emotion-form"><label for="textToAnalyze">Please enter the text to be analyzed</label><textarea id="textToAnalyze" rows="4" placeholder="How are you feeling today?"></textarea><button type="submit">Analyze emotions</button></form><h2>Result of Emotion Detection</h2><div id="system_response" role="status" aria-live="polite">Enter a sentence and select Analyze emotions.</div><footer>Python · Flask · Watson EmotionPredict</footer></main></body></html>
